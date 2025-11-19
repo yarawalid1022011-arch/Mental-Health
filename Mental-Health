@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Growing Concern: The State of Adolescent Well-Being in Qatar</title>
+  <style>
+    :root{
+      --green-1:#e6f8ef;
+      --green-2:#c8f0d6;
+      --green-3:#7fd09a;
+      --green-4:#2e8f4b;
+      --accent:#ffffff;
+      --card-shadow: 0 6px 18px rgba(46,143,75,0.12);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--green-1),#f6fff7);color:var(--green-4)}
+    header{padding:28px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--green-3),var(--green-4));display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;font-size:20px;box-shadow:var(--card-shadow)}
+    h1{margin:0;font-size:20px}
+    nav a{margin-left:12px;text-decoration:none;padding:8px 12px;border-radius:10px;background:transparent;color:var(--green-4);font-weight:600}
+    .container{max-width:980px;margin:18px auto;padding:18px}
+    .hero{background:linear-gradient(90deg,rgba(127,208,154,0.12),rgba(46,143,75,0.06));border-radius:18px;padding:22px;display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center;box-shadow:var(--card-shadow)}
+    .card{background:var(--accent);padding:14px;border-radius:12px}
+    .aim{font-size:18px;margin-bottom:8px}
+    .buttons{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:12px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--green-4);color:white}
+    .btn-outline{background:transparent;border:2px solid var(--green-4);color:var(--green-4)}
+    section{margin-top:18px}
+    footer{margin-top:26px;padding:18px;border-radius:12px;text-align:center;color:var(--green-4)}
+    @media (max-width:840px){
+      .hero{grid-template-columns:1fr}
+      header{flex-direction:column;gap:12px;align-items:flex-start}
+    }
+    .quote-box{margin-top:18px;padding:14px;background:var(--green-2);border-radius:12px;font-style:italic;opacity:0.9}
+    a.link-like{color:var(--green-4);text-decoration:underline;cursor:pointer}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo">AW</div>
+      <div>
+        <h1>A Growing Concern: The State of Adolescent Well-Being in Qatar</h1>
+        <div style="font-size:13px;color:var(--green-4, #2e8f4b);opacity:0.9">A youth mental health project.</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#learn">Learn more</a>
+      <a id="join-btn" class="link-like">Sign up (Google Form)</a>
+      <a href="#why-important">Why it matters</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div>
+        <div class="card">
+          <div class="aim">Our aim</div>
+          <h2 style="margin-top:6px">To improve adolescent mental well‑being across Qatar by providing education, safe spaces, and resources.</h2>
+          <p style="opacity:0.9">We want to create workshops, online resources, peer-support channels, and simple activities that help young people manage stress, build healthy routines, and connect with trusted adults.</p>
+          <div class="buttons">
+            <button class="btn btn-primary" onclick="scrollToSection('learn')">Learn more</button>
+            <button class="btn btn-outline" id="signup-btn">Sign up / Take part</button>
+            <button class="btn btn-primary" onclick="window.location.href='tel:+97455458983'">Contact / Donations: +974 5545 8983</button>
+            <button class="btn btn-outline" id="quote-btn">Show a quote</button>
+          </div>
+          <div class="quote-box" id="quote-box">Click the button to see a quote about mental health.</div>
+        </div>
+
+        <section id="why-important" style="margin-top:12px">
+          <div class="card">
+            <p>Adolescent well-being issues in Qatar have affected thousands of lives, with data showing a significant portion of youth face physical, mental, and social health challenges, placing this issue at the heart of national concern [1][2][3][4].</p>
+            <h4>Prevalence and Direct Impact</h4>
+            <ul>
+              <li>Up to half of Qatari adolescents report engaging in risky or unhealthy behaviors; over 34% of boys under 20 are overweight—the highest regional rate [4][1].</li>
+              <li>One in five people in Qatar will experience a mental illness at some point, with adolescents heavily represented [3].</li>
+              <li>Among secondary school students (13–15 years), nearly 44% have engaged in unlicensed driving, 38% in physical fights, 31% have not worn seatbelts, and 22% have smoked cigarettes [4].</li>
+              <li>The prevalence of iron deficiency among adolescents reached 26.4%, indicating tens of thousands affected nationwide [2].</li>
+            </ul>
+            <h4>Mental Health and Social Effects</h4>
+            <ul>
+              <li>Depression is the most common mental health issue among young adults, with 75% of surveyed adolescents identifying it as a serious concern [5][4].</li>
+              <li>Most families report irritability, nervousness, and hostile behavior among adolescents seeking help at clinics [6].</li>
+            </ul>
+            <h4>Systemic Consequences</h4>
+            <ul>
+              <li>These challenges lead to lower educational achievement, higher unemployment, and greater risk of lifelong health problems, increasing the burden on society [7][8].</li>
+              <li>Tens of thousands of adolescents face serious well-being concerns affecting daily life and future prospects [2][3][4].</li>
+            </ul>
+            <p>These statistics underscore the urgency of addressing adolescent well-being as a national concern [1][3][2][4].</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  <footer>
+    <small>Made with 💚 for adolescents in Qatar • Created by Yara, Jomana, Jana, Rodina, and Youssef</small>
+  </footer>
+
+  <script>
+    const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfC9r2ab2UwaXTsoihvBDx4HFff2ylN2-e6iJb9SDh40QrAWg/viewform?usp=dialog";
+    function scrollToSection(id){
+      const el = document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth'});
+    }
+    document.getElementById('signup-btn').addEventListener('click', ()=>{ window.open(GOOGLE_FORM_URL, '_blank'); });
+    document.getElementById('join-btn').addEventListener('click', ()=>{ window.open(GOOGLE_FORM_URL, '_blank'); });
+
+    const quotes = [
+      "Take care of your mental health every day.",
+      "It is okay to ask for help when you feel low.",
+      "Small positive actions can improve your mood.",
+      "Talking to friends or family can help lighten emotional load.",
+      "Exercise and fresh air are good for the mind and body."
+    ];
+    const quoteBox = document.getElementById('quote-box');
+    document.getElementById('quote-btn').addEventListener('click', ()=>{
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      quoteBox.textContent = quotes[randomIndex];
+    });
+  </script>
+</body>
+</html>
